@@ -1,0 +1,38 @@
+header {
+    background-color: @primary-background-color;
+    padding: @default-padding;
+    text-align: center;
+
+    h1 {
+        margin: @no-margin;
+        color: @primary-text-color;
+        font-size: 2rem; // Tamaño de fuente ajustado
+    }
+
+    nav {
+        margin-top: @default-gap;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem; // Separación entre enlaces
+        }
+
+        li {
+            display: inline;
+        }
+
+        a {
+            color: @primary-text-color;
+            text-decoration: none;
+            font-size: 1rem; // Ajusta el tamaño del texto
+            transition: color 0.3s;
+
+            &:hover {
+                color: lighten(@primary-text-color, 20%);
+            }
+        }
+    }
+}
